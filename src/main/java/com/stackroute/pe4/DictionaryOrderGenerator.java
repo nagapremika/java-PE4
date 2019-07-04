@@ -23,14 +23,14 @@ public class DictionaryOrderGenerator {
             String swap;
             for (int i = 0; i < length; i++) {
                 for (int j = i + 1; j < length; j++) {
-                    if (array[i].compareTo(array[j]) > 0) {
+                    if (array[i].compareTo(array[j]) > 0) {     //Generates words in lexographical order
                         swap = array[i];
                         array[i] = array[j];
                         array[j] = swap;
                     }
                 }
             }
-            string= Arrays.toString(array);
+            string= Arrays.toString(array);     //Converting array to String
         }
 return string;
     }

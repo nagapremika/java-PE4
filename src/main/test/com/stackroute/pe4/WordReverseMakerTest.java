@@ -39,4 +39,11 @@ public class WordReverseMakerTest {
 //        assert
         assertEquals("Null String", result);
     }
+    @Test
+    public void givenStringShouldReturnWordsReverse() {
+//        arrange
+        String result = word.reverse("@123 Base Line");
+//        assert
+        assertEquals("321@ esaB eniL ", result);
+    }
 }

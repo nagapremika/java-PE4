@@ -37,7 +37,7 @@ public class RegularExpressionSampleTest {
 //        arrange
         String result = expressionSample.finder(null);
 //        assert
-        assertEquals("Null String", result);
+        assertEquals("NullPointerException", result);
     }
     @Test
     public void givenStringEmptyShouldReturnMessage() {

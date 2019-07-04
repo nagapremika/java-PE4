@@ -22,8 +22,8 @@ public class Finder {       //This class gives the index of given pattern in a s
             Matcher matcher = pattern.matcher(sentence);
 
             while (matcher.find()) {
-                start = matcher.start();
-                end = matcher.end();
+                start = matcher.start();        //Start index of pattern
+                end = matcher.end();               //End index of pattern
                 output = output.concat(start + "-" + end + " ");
             }
         }

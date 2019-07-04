@@ -12,9 +12,9 @@ public class CharacterCounter {         //CharacterCounter gives the number of o
         else{
 
         int length=input.length();
-        word=input.replaceAll(character,"");
+        word=input.replaceAll(character,"");        //Replaces the character with empty string
         int frequency=length-word.length();
-        if(frequency==0) {
+        if(frequency==0) {                          //There is no difference between given string and replaced string
             result = "Character doesnot exists";
         }else {
             result="Character frequency is ";

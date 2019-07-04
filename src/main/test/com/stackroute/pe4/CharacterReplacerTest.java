@@ -33,7 +33,7 @@ public class CharacterReplacerTest {
 //        arrange
         String result=replacer.converter("java is programming language");
 //        assert
-        assertEquals("java is programming language",result);
+        assertNotEquals("java is programming",result);
     }
     @Test
     public void givenNullShouldReturnNull()
@@ -41,6 +41,14 @@ public class CharacterReplacerTest {
 //        arrange
         String result=replacer.converter(null);
 //        assert
-        assertEquals("Null string",result);
+        assertNull(result);
+    }
+    @Test
+    public void givenEmptyStringShouldReturnEmpty()
+    {
+//        arrange
+        String result=replacer.converter("");
+//        assert
+        assertEquals("Empty string",result);
     }
 }

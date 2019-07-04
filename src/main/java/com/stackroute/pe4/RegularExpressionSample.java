@@ -10,10 +10,16 @@ public class RegularExpressionSample {      //This class gives message as true i
 
         }
         else if(sentence==null){
-            output="Null String";
+            try {
+                throw new NullPointerException();
+            }
+            catch (NullPointerException e)
+            {
+                return "NullPointerException";
+            }
         }
         else {
-            if (sentence.contains(name)) {
+            if (sentence.contains(name)) {      //if sentence contains name the concats with true else false
                 output = string.concat(" True");
             } else {
                 output = string.concat(" False");

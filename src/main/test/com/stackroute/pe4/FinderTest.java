@@ -46,5 +46,12 @@ public class FinderTest {
 //        assert
         assertNotEquals("String Exists", result);
     }
+    @Test
+    public void givenStringAndCharacterWithNumberShouldReturnIndex() {
+//        arrange
+        String result = word.match("983!546753 @3! #akd","3!");
+//        assert
+        assertEquals("2-4 12-14 ", result);
+    }
 
 }

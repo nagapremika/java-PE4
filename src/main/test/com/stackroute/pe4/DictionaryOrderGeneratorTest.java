@@ -46,4 +46,12 @@ public class DictionaryOrderGeneratorTest {
         //        assert
         assertEquals("Null String", result);
     }
+    @Test
+    public void givenStringNumbersShouldReturnInAlphabeticalOrder()
+    {
+//        arrange
+        String result=order.dictionary( "9 2 -1");
+        //        assert
+        assertEquals("[-1, 2, 9]", result);
+    }
 }

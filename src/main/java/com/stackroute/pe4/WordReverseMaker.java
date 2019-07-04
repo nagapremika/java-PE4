@@ -16,10 +16,10 @@ public class WordReverseMaker {     //WordReversemaker reverses every word in gi
              array=input.split(" ");
             StringBuffer[] word=new StringBuffer[array.length];
             for (int i=0;i<array.length;i++) {
-                word[i] = new StringBuffer(array[i]);
+                word[i] = new StringBuffer(array[i]);       //reverse() method reverses the string
                 word[i].reverse();
 
-                output = output.concat(word[i].toString()+" ");
+                output = output.concat(word[i].toString()+" ");     //Concatenating output
             }
       }
        return output;
